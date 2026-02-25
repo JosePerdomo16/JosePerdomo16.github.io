@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RobotiX Lab — Robótica Maker e Inclusiva | Neiva, Colombia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="ann-marquee">
+            <span><i class="fas fa-bolt"></i> Inscripciones abiertas — Neiva, Huila</span>
+            <span class="ann-sep">|</span>
+            <span><i class="fas fa-house"></i> Espacios 100% confortables</span>
+            <span class="ann-sep">|</span>
+            <span><i class="fas fa-phone"></i> +57 319 433 7572</span>
+            <span class="ann-sep">|</span>
+            <span><i class="fas fa-bolt"></i> Inscripciones abiertas — Neiva, Huila</span>
+            <span class="ann-sep">|</span>
+            <span><i class="fas fa-house"></i> Espacios 100% confortables</span>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#inicio" class="logo-link">
+                <img src="Logo.png" alt="RobotiX Lab" class="logo-img">
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li class="nav-dropdown">
+                    <a href="#cursos" class="nav-link nav-drop-trigger">Cursos <i class="fas fa-chevron-down fa-xs"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#cursos"><i class="fas fa-robot"></i> Robótica Infantil</a>
+                        <a href="#cursos"><i class="fas fa-microchip"></i> Robótica Maker</a>
+                        <a href="#cursos"><i class="fas fa-hand-holding-heart"></i> Robótica Inclusiva</a>
+                        <a href="#cursos"><i class="fas fa-industry"></i> Robótica Industrial</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#inclusion" class="nav-link">Inclusión</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="tel:+573001234567" class="btn-call"><i class="fas fa-phone"></i> <span>Llámanos</span></a>
+                <a href="#inscripcion" class="btn-cta">Inscríbete</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-bg-circuit"></div>
+            <div class="hero-glow g1"></div>
+            <div class="hero-glow g2"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge"><i class="fas fa-map-marker-alt"></i> Neiva, Huila — Colombia</div>
+                    <h1 class="hero-title">
+                        La academia de robótica
+                        <em>más inclusiva</em>
+                        del sur colombiano
+                    </h1>
+                    <p class="hero-desc">Donde niños y jóvenes aprenden a construir, programar y crear tecnología. Sin barreras, sin etiquetas.</p>
+                    <div class="hero-stats">
+                        <div class="hstat"><span class="hstat-n">200+</span><span class="hstat-l">Estudiantes</span></div>
+                        <div class="hstat-div"></div>
+                        <div class="hstat"><span class="hstat-n">4</span><span class="hstat-l">Programas</span></div>
+                        <div class="hstat-div"></div>
+                        <div class="hstat"><span class="hstat-n">100%</span><span class="hstat-l">Inclusivo</span></div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#cursos" class="btn btn-primary"><i class="fas fa-rocket"></i> Ver Cursos</a>
+                        <a href="#nosotros" class="btn btn-outline"><i class="fas fa-play-circle"></i> Conoce el Lab</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-logo-wrap">
+                        <img src="Logo.png" alt="RobotiX Lab" class="hero-logo-img">
+                        <div class="ring r1"></div>
+                        <div class="ring r2"></div>
+                        <div class="ring r3"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="#nosotros" class="hero-scroll">
+                <span>Explorar</span>
+                <div class="scroll-dot"></div>
+            </a>
+        </section>
+
+        <!-- STRIP -->
+        <section class="strip">
+            <div class="container">
+                <div class="strip-grid">
+                    <div class="strip-item"><i class="fas fa-calendar-alt"></i><div><strong>Próxima cohorte</strong><span>Marzo 2025 — Cupos limitados</span></div></div>
+                    <div class="strip-item"><i class="fas fa-certificate"></i><div><strong>Certificación oficial</strong><span>Reconocida por la industria</span></div></div>
+                    <div class="strip-item"><i class="fas fa-child"></i><div><strong>Desde 6 años</strong><span>Todas las edades, todos bienvenidos</span></div></div>
+                    <div class="strip-item"><i class="fas fa-universal-access"></i><div><strong>100% Accesible</strong><span>Instalaciones y cursos adaptados</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="nosotros">
+            <div class="container">
+                <div class="nosotros-grid">
+                    <div class="nosotros-text">
+                        <div class="section-label">¿Quiénes somos?</div>
+                        <h2 class="section-heading">Robótica Maker<br><span class="tg">e Inclusiva</span></h2>
+                        <p class="nd">RobotiX Lab nació en Neiva con una misión clara: que la tecnología no sea privilegio de pocos. Somos la primera academia de robótica en el sur colombiano con un modelo <strong>100% inclusivo</strong>, adaptado para personas con diversidad funcional, neurodivergencias y distintas capacidades.</p>
+                        <p class="nd">Nuestra metodología <strong>Maker</strong> hace que los estudiantes aprendan construyendo, programando y resolviendo retos reales — no memorizando.</p>
+                        <div class="valores">
+                            <div class="valor"><div class="vi"><i class="fas fa-tools"></i></div><div><strong>Aprender haciendo</strong><span>Proyectos reales desde el primer día</span></div></div>
+                            <div class="valor"><div class="vi"><i class="fas fa-heart"></i></div><div><strong>Sin barreras</strong><span>Adaptamos el curso a ti, no al revés</span></div></div>
+                            <div class="valor"><div class="vi"><i class="fas fa-users"></i></div><div><strong>Comunidad viva</strong><span>Eventos, retos y torneos locales</span></div></div>
+                        </div>
+                        <a href="#contacto" class="btn btn-primary" style="margin-top:2rem">Habla con nosotros</a>
+                    </div>
+                    <div class="fil-cards">
+                        <div class="fil-card"><div class="fc-icon"><i class="fas fa-microchip"></i></div><h3>Maker</h3><p>Prototipa, experimenta y construye. Las ideas se convierten en robots reales con Arduino, sensores y electrónica.</p></div>
+                        <div class="fil-card fc-accent"><div class="fc-icon"><i class="fas fa-wheelchair"></i></div><h3>Inclusiva</h3><p>Tecnología para todas las personas. Kits adaptados, materiales accesibles y acompañamiento individual.</p></div>
+                        <div class="fil-card"><div class="fc-icon"><i class="fas fa-brain"></i></div><h3>Neurodivergente</h3><p>Espacios seguros y ritmos personalizados para personas con TEA, TDAH y otras condiciones.</p></div>
+                        <div class="fil-card fc-accent"><div class="fc-icon"><i class="fas fa-lightbulb"></i></div><h3>Innovadora</h3><p>Programas actualizados con tecnologías reales usadas en la industria colombiana.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CURSOS -->
+        <section id="cursos" class="cursos">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">Programas académicos</div>
+                    <h2 class="section-heading">Nuestros <span class="tg">Cursos</span></h2>
+                    <p class="section-sub">Desde los 6 años hasta profesionales. Todos tienen un lugar en el Lab.</p>
+                </div>
+                <div class="cursos-grid">
+                    <div class="curso-card">
+                        <div class="ctag ctag-new">Nuevo</div>
+                        <div class="c-head"><div class="c-icon"><i class="fas fa-robot"></i></div><div class="c-meta"><span class="c-nivel">Nivel Básico</span><span class="c-edad"><i class="fas fa-child"></i> 6 a 12 años</span></div></div>
+                        <h3>Robótica Infantil</h3>
+                        <p>Introducción a la robótica con kits adaptados, bloques de programación visual y proyectos creativos. Aprender jugando.</p>
+                        <ul class="c-features"><li><i class="fas fa-check-circle"></i> Kits físicos propios</li><li><i class="fas fa-check-circle"></i> Scratch & mBlock</li><li><i class="fas fa-check-circle"></i> Acompañamiento inclusivo</li></ul>
+                        <a href="#contacto" class="btn-c">Ver programa <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="curso-card">
+                        <div class="c-head"><div class="c-icon"><i class="fas fa-microchip"></i></div><div class="c-meta"><span class="c-nivel">Nivel Intermedio</span><span class="c-edad"><i class="fas fa-user"></i> Jóvenes y Adultos</span></div></div>
+                        <h3>Robótica Maker</h3>
+                        <p>Arduino, sensores, actuadores y diseño 3D. Crea tus propios proyectos tecnológicos desde cero y llévalos a la realidad.</p>
+                        <ul class="c-features"><li><i class="fas fa-check-circle"></i> Arduino & ESP32</li><li><i class="fas fa-check-circle"></i> Diseño e impresión 3D</li><li><i class="fas fa-check-circle"></i> Laboratorio Maker</li></ul>
+                        <a href="#contacto" class="btn-c">Ver programa <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="curso-card curso-dest">
+                        <div class="ctag ctag-inc"><i class="fas fa-heart"></i> Inclusivo</div>
+                        <div class="c-head"><div class="c-icon"><i class="fas fa-hand-holding-heart"></i></div><div class="c-meta"><span class="c-nivel">Adaptado</span><span class="c-edad"><i class="fas fa-users"></i> Todas las edades</span></div></div>
+                        <h3>Robótica Inclusiva</h3>
+                        <p>Diseñado con y para personas con diversidad funcional. Material adaptado, ritmos personalizados y equipo especializado.</p>
+                        <ul class="c-features"><li><i class="fas fa-check-circle"></i> Adaptación individual</li><li><i class="fas fa-check-circle"></i> Acompañamiento especializado</li><li><i class="fas fa-check-circle"></i> Material táctil y visual</li></ul>
+                        <a href="#contacto" class="btn-c-primary">Solicitar info <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="curso-card">
+                        <div class="c-head"><div class="c-icon"><i class="fas fa-industry"></i></div><div class="c-meta"><span class="c-nivel">Avanzado</span><span class="c-edad"><i class="fas fa-briefcase"></i> Profesionales</span></div></div>
+                        <h3>Robótica Industrial</h3>
+                        <p>Brazos robóticos, PLC, automatización industrial y programación avanzada. Prepárate para el mercado laboral tecnológico.</p>
+                        <ul class="c-features"><li><i class="fas fa-check-circle"></i> Certificación oficial</li><li><i class="fas fa-check-circle"></i> Prácticas empresas</li><li><i class="fas fa-check-circle"></i> Bolsa de empleo</li></ul>
+                        <a href="#contacto" class="btn-c">Ver programa <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="cursos-cta-wrap">
+                    <p>¿No sabes cuál curso es para ti?</p>
+                    <a href="#contacto" class="btn btn-outline">Asesórate gratis <i class="fas fa-comments"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- INCLUSIÓN -->
+        <section id="inclusion" class="inclusion">
+            <div class="inc-bg"></div>
+            <div class="container">
+                <div class="inclusion-layout">
+                    <div class="inclusion-text">
+                        <div class="section-label light">Compromiso real</div>
+                        <h2 class="section-heading light">Tecnología<br><span class="tg">sin barreras</span></h2>
+                        <p class="inc-desc">En RobotiX Lab no hacemos inclusión de fachada. Nuestros espacios, materiales y metodologías fueron diseñados para ser verdaderamente accesibles desde el principio.</p>
+                        <blockquote class="inc-quote">"No solo enseñamos tecnología.<br>Creamos futuros sin etiquetas."</blockquote>
+                        <a href="#contacto" class="btn btn-primary">Pregunta por adaptaciones</a>
+                    </div>
+                    <div class="inc-cards">
+                        <div class="inc-card"><div class="ic-icon"><i class="fas fa-eye"></i></div><h4>Discapacidad visual</h4><p>Kits con marcadores táctiles y retroalimentación sonora.</p></div>
+                        <div class="inc-card"><div class="ic-icon"><i class="fas fa-ear-deaf"></i></div><h4>Discapacidad auditiva</h4><p>Clases con intérprete LSC y materiales visuales completos.</p></div>
+                        <div class="inc-card"><div class="ic-icon"><i class="fas fa-brain"></i></div><h4>TEA y TDAH</h4><p>Ambientes sin sobreestimulación y acompañamiento individual.</p></div>
+                        <div class="inc-card"><div class="ic-icon"><i class="fas fa-wheelchair"></i></div><h4>Accesibilidad física</h4><p>Instalaciones adaptadas y mesas regulables en todo el lab.</p></div>
+                        <div class="inc-card"><div class="ic-icon"><i class="fas fa-child"></i></div><h4>Todas las edades</h4><p>Desde 6 años. La curiosidad no tiene límite de edad.</p></div>
+                        <div class="inc-card"><div class="ic-icon"><i class="fas fa-hand-sparkles"></i></div><h4>Ritmo propio</h4><p>Sin presiones. Cada estudiante avanza a su propio ritmo.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPACTO -->
+        <section class="impacto">
+            <div class="container">
+                <div class="impacto-grid">
+                    <div class="imp-item"><span class="imp-n" data-target="200">0</span><span class="imp-plus">+</span><p>Estudiantes formados</p></div>
+                    <div class="imp-item"><span class="imp-n" data-target="4">0</span><p>Programas activos</p></div>
+                    <div class="imp-item"><span class="imp-n" data-target="30">0</span><span class="imp-plus">+</span><p>Proyectos realizados</p></div>
+                    <div class="imp-item"><span class="imp-n" data-target="5">0</span><p>Años de experiencia</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
+        <section id="galeria" class="galeria">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">Vida en el Lab</div>
+                    <h2 class="section-heading">Galería <span class="tg">RobotiX</span></h2>
+                    <p class="section-sub">Momentos reales de aprendizaje, creación y comunidad.</p>
+                </div>
+                <div class="gal-grid">
+                    <div class="gal-item gi-tall"><div class="gi-overlay"><i class="fas fa-robot fa-3x"></i><span>Curso Maker</span></div></div>
+                    <div class="gal-item"><div class="gi-overlay"><i class="fas fa-child fa-2x"></i><span>Robótica Infantil</span></div></div>
+                    <div class="gal-item"><div class="gi-overlay"><i class="fas fa-wheelchair fa-2x"></i><span>Programa Inclusivo</span></div></div>
+                    <div class="gal-item gi-wide"><div class="gi-overlay"><i class="fas fa-industry fa-2x"></i><span>Robótica Industrial</span></div></div>
+                    <div class="gal-item"><div class="gi-overlay"><i class="fas fa-users fa-2x"></i><span>Comunidad Lab</span></div></div>
+                </div>
+                <p class="gal-note">Próximamente fotos reales del Lab — <a href="#contacto">¡Ven a conocernos!</a></p>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS -->
+        <section class="testimonios">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">Comunidad</div>
+                    <h2 class="section-heading">Ellos ya son <span class="tg">del Lab</span></h2>
+                    <p class="section-sub">Historias reales que nos inspiran cada día.</p>
+                </div>
+                <div class="test-grid">
+                    <div class="test-card">
+                        <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Pensé que la robótica no era para mí por mi discapacidad visual. En RobotiX Lab me enseñaron que no hay límites. Hoy programo con Arduino."</p>
+                        <div class="t-autor"><div class="t-av">AM</div><div><strong>Ana María</strong><span>45 años — Curso Inclusivo</span></div></div>
+                    </div>
+                    <div class="test-card test-feat">
+                        <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Mi hijo tiene TEA y aquí encontró un espacio donde puede ser él mismo mientras aprende. El equipo es extraordinario."</p>
+                        <div class="t-autor"><div class="t-av">CM</div><div><strong>Carlos Mendoza</strong><span>Padre de Mateo, 9 años</span></div></div>
+                    </div>
+                    <div class="test-card">
+                        <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"De no saber nada a construir mi primer robot en 3 meses. La metodología maker es increíble. Ya trabajo en automatización."</p>
+                        <div class="t-autor"><div class="t-av">LF</div><div><strong>Luis Fernando</strong><span>23 años — Curso Maker</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA INSCRIPCIÓN -->
+        <section id="inscripcion" class="inscripcion">
+            <div class="ins-bg"></div>
+            <div class="container">
+                <div class="ins-layout">
+                    <div class="ins-text">
+                        <div class="section-label light">Únete ahora</div>
+                        <h2>¿Listo para construir<br>tu <span class="tg">futuro tecnológico?</span></h2>
+                        <p>Cupos limitados para la cohorte de Marzo 2025. Reserva tu lugar hoy.</p>
+                        <div class="ins-contact-alt">
+                            <a href="https://wa.me/573001234567" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp</a>
+                            <a href="tel:+573001234567" class="btn-tel"><i class="fas fa-phone"></i> +57 300 123 4567</a>
+                        </div>
+                    </div>
+                    <div class="ins-form-wrap">
+                        <form class="ins-form" id="insForm">
+                            <h3>Solicitar información</h3>
+                            <div class="form-group">
+                                <label>Nombre completo</label>
+                                <input type="text" placeholder="Ej: Juan Pérez" required>
+                            </div>
+                            <div class="form-group">
+                                <label>WhatsApp / Teléfono</label>
+                                <input type="tel" placeholder="+57 300 000 0000">
+                            </div>
+                            <div class="form-group">
+                                <label>Programa de interés</label>
+                                <select required>
+                                    <option value="" disabled selected>Selecciona un programa</option>
+                                    <option>Robótica Infantil (6-12 años)</option>
+                                    <option>Robótica Maker (Jóvenes y Adultos)</option>
+                                    <option>Robótica Inclusiva</option>
+                                    <option>Robótica Industrial</option>
+                                    <option>No sé, quiero asesoría gratuita</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i> Enviar solicitud
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contacto" class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="fc-brand">
+                        <img src="Logo.png" alt="RobotiX Lab" class="f-logo">
+                        <p class="f-tagline">Robótica Maker e Inclusiva</p>
+                        <p class="f-bio">La primera academia de robótica inclusiva del sur colombiano. Neiva, Huila.</p>
+                        <div class="f-badge"><i class="fas fa-universal-access"></i> Espacio 100% Accesible</div>
+                    </div>
+                    <div class="fc">
+                        <h4>Programas</h4>
+                        <ul><li><a href="#cursos"><i class="fas fa-angle-right"></i> Robótica Infantil</a></li><li><a href="#cursos"><i class="fas fa-angle-right"></i> Robótica Maker</a></li><li><a href="#cursos"><i class="fas fa-angle-right"></i> Robótica Inclusiva</a></li><li><a href="#cursos"><i class="fas fa-angle-right"></i> Robótica Industrial</a></li></ul>
+                    </div>
+                    <div class="fc">
+                        <h4>Información</h4>
+                        <ul><li><a href="#nosotros"><i class="fas fa-angle-right"></i> Quiénes somos</a></li><li><a href="#inclusion"><i class="fas fa-angle-right"></i> Inclusión</a></li><li><a href="#galeria"><i class="fas fa-angle-right"></i> Galería</a></li><li><a href="#inscripcion"><i class="fas fa-angle-right"></i> Inscripciones</a></li></ul>
+                    </div>
+                    <div class="fc fc-contact">
+                        <h4>Contacto</h4>
+                        <ul class="f-contact-list">
+                            <li><i class="fas fa-phone"></i> +57 300 123 4567</li>
+                            <li><i class="fab fa-whatsapp"></i> +57 300 123 4567</li>
+                            <li><i class="fas fa-envelope"></i> info@robotixlab.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Neiva, Huila — Colombia</li>
+                            <li><i class="fas fa-clock"></i> Lun – Vie: 9am – 7pm</li>
+                        </ul>
+                        <div class="f-social">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 RobotiX Lab. Todos los derechos reservados.</p>
+                <div class="f-legal"><a href="#">Privacidad</a><span>|</span><a href="#">Términos</a></div>
+                <p class="f-love"><i class="fas fa-heart"></i> Hecho con amor en Neiva, Colombia</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-top" id="backTop" aria-label="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
