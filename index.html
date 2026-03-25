@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RobotiX Lab — Robótica Maker e Inclusiva | Neiva, Colombia</title>
+    <title>RobotiX Lab — ¡Aprende Robótica! | Neiva, Colombia</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <!-- ANNOUNCEMENT BAR -->
     <div class="announcement-bar">
-        <div class="ann-marquee">
-            <span><i class="fas fa-bolt"></i> Inscripciones abiertas — Neiva, Huila</span>
-            <span class="ann-sep">|</span>
-            <span><i class="fas fa-house"></i> Espacios 100% confortables</span>
-            <span class="ann-sep">|</span>
-            <span><i class="fas fa-phone"></i> +57 319 433 7572</span>
-            <span class="ann-sep">|</span>
-            <span><i class="fas fa-bolt"></i> Inscripciones abiertas — Neiva, Huila</span>
-            <span class="ann-sep">|</span>
-            <span><i class="fas fa-house"></i> Espacios 100% confortables</span>
+        <div class="ann-track">
+            <div class="ann-marquee">
+                <span><i class="fas fa-bolt"></i> ¡Inscripciones abiertas! — Neiva, Huila</span>
+                <span class="ann-sep">🤖</span>
+                <span><i class="fas fa-star"></i> Espacios 100% confortables</span>
+                <span class="ann-sep">🚀</span>
+                <span><i class="fas fa-phone"></i> +57 317 176 5919</span>
+                <span class="ann-sep">⚡</span>
+                <span><i class="fas fa-child"></i> ¡Desde los 7 años!</span>
+                <span class="ann-sep">🤖</span>
+                <span><i class="fas fa-bolt"></i> ¡Inscripciones abiertas! — Neiva, Huila</span>
+                <span class="ann-sep">🚀</span>
+                <span><i class="fas fa-star"></i> Espacios 100% confortables</span>
+                <span class="ann-sep">⚡</span>
+                <span><i class="fas fa-phone"></i> +57 317 176 5919</span>
+                <span class="ann-sep">🤖</span>
+                <span><i class="fas fa-child"></i> ¡Desde los 7 años!</span>
+            </div>
         </div>
     </div>
 
@@ -33,28 +41,25 @@
             <a href="#inicio" class="logo-link">
                 <img src="Logo.png" alt="RobotiX Lab" class="logo-img">
             </a>
-
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#inicio" class="nav-link active">Inicio</a></li>
                 <li class="nav-dropdown">
                     <a href="#cursos" class="nav-link nav-drop-trigger">Cursos <i class="fas fa-chevron-down fa-xs"></i></a>
                     <div class="dropdown-menu">
-                        <a href="#cursos"><i class="fas fa-robot"></i> EXPLORER</a>
-                        <a href="#cursos"><i class="fas fa-microchip"></i> BUILDER</a>
-                        <a href="#cursos"><i class="fas fa-hand-holding-heart"></i>INNOVATOR</a>
+                        <a href="#cursos"><i class="fas fa-robot"></i> EXPLORER (7–9 años)</a>
+                        <a href="#cursos"><i class="fas fa-microchip"></i> BUILDER (10–12 años)</a>
+                        <a href="#cursos"><i class="fas fa-hand-holding-heart"></i> INNOVATOR (12–15)</a>
                     </div>
                 </li>
                 <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                <li><a href="#inclusion" class="nav-link">Inclusión</a></li>
+                <li><a href="#impacto-social" class="nav-link">Inclusión</a></li>
                 <li><a href="#galeria" class="nav-link">Galería</a></li>
                 <li><a href="#contacto" class="nav-link">Contacto</a></li>
             </ul>
-
             <div class="nav-actions">
-                <a href="tel:+573001234567" class="btn-call"><i class="fas fa-phone"></i> <span>Llámanos</span></a>
-                <a href="#inscripcion" class="btn-cta">Inscríbete</a>
+                <a href="tel:+573171765919" class="btn-call"><i class="fas fa-phone"></i> <span>Llámanos</span></a>
+                <a href="#inscripcion" class="btn-cta"><i class="fas fa-rocket"></i> ¡Inscríbete!</a>
             </div>
-
             <button class="hamburger" id="hamburger" aria-label="Menú">
                 <span></span><span></span><span></span>
             </button>
@@ -64,24 +69,43 @@
     <main>
         <!-- HERO -->
         <section id="inicio" class="hero">
-            <div class="hero-bg-circuit"></div>
+            <div class="hero-particles" id="particles"></div>
             <div class="hero-glow g1"></div>
             <div class="hero-glow g2"></div>
+            <div class="hero-glow g3"></div>
             <div class="container hero-container">
                 <div class="hero-content">
-                    <div class="hero-badge"><i class="fas fa-map-marker-alt"></i> Neiva, Huila — Colombia</div>
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <i class="fas fa-map-marker-alt"></i> Neiva, Huila — Colombia
+                    </div>
                     <h1 class="hero-title">
-                        La nueva 
-                        <em>generación</em>
-                        de educación en robótica
+                        ¡Aprende a
+                        <span class="hero-title-line2">construir</span>
+                        <span class="hero-title-line3">el futuro!</span>
                     </h1>
-                    <p class="hero-desc">Donde niños y jóvenes aprenden a construir, programar y crear tecnología. Sin barreras, sin etiquetas.</p>
+                    <p class="hero-desc">Robótica, programación y creación para niños y jóvenes de 7 a 15 años. <strong>Sin barreras, sin límites.</strong></p>
+                    <div class="hero-pills">
+                        <div class="pill"><i class="fas fa-robot"></i> Arduino & Robots</div>
+                        <div class="pill"><i class="fas fa-code"></i> Programación</div>
+                        <div class="pill"><i class="fas fa-print"></i> Impresión 3D</div>
+                        <div class="pill"><i class="fas fa-heart"></i> 100% Inclusivo</div>
+                    </div>
                     <div class="hero-stats">
-                        <div class="hstat"><span class="hstat-n">30+</span><span class="hstat-l">Estudiantes</span></div>
+                        <div class="hstat">
+                            <span class="hstat-n">30<span class="hstat-plus">+</span></span>
+                            <span class="hstat-l">Estudiantes</span>
+                        </div>
                         <div class="hstat-div"></div>
-                        <div class="hstat"><span class="hstat-n">3</span><span class="hstat-l">Programas</span></div>
+                        <div class="hstat">
+                            <span class="hstat-n">3</span>
+                            <span class="hstat-l">Programas</span>
+                        </div>
                         <div class="hstat-div"></div>
-                        <div class="hstat"><span class="hstat-n">100%</span><span class="hstat-l">Inclusivo</span></div>
+                        <div class="hstat">
+                            <span class="hstat-n">100<span class="hstat-plus">%</span></span>
+                            <span class="hstat-l">Inclusivo</span>
+                        </div>
                     </div>
                     <div class="hero-buttons">
                         <a href="#cursos" class="btn btn-primary"><i class="fas fa-rocket"></i> Ver Cursos</a>
@@ -89,28 +113,88 @@
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="hero-logo-wrap">
-                        <img src="Logo.png" alt="RobotiX Lab" class="hero-logo-img">
-                        <div class="ring r1"></div>
-                        <div class="ring r2"></div>
-                        <div class="ring r3"></div>
+                    <div class="hero-visual-wrap">
+                        <div class="robot-container">
+                            <img src="Logo.png" alt="RobotiX Lab" class="hero-logo-img">
+                            <div class="ring r1"></div>
+                            <div class="ring r2"></div>
+                            <div class="ring r3"></div>
+                        </div>
+                        <div class="float-badge fb1"><i class="fas fa-star"></i> ¡Aprende haciendo!</div>
+                        <div class="float-badge fb2"><i class="fas fa-trophy"></i> Proyectos reales</div>
+                        <div class="float-badge fb3"><i class="fas fa-bolt"></i> Julio 2026</div>
+                        <div class="float-icon fi1"><i class="fas fa-robot"></i></div>
+                        <div class="float-icon fi2"><i class="fas fa-microchip"></i></div>
+                        <div class="float-icon fi3"><i class="fas fa-code"></i></div>
                     </div>
                 </div>
             </div>
-            <a href="#nosotros" class="hero-scroll">
-                <span>Explorar</span>
-                <div class="scroll-dot"></div>
-            </a>
+            <div class="hero-wave">
+                <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="#1A1E2D"/>
+                </svg>
+            </div>
         </section>
 
         <!-- STRIP -->
         <section class="strip">
             <div class="container">
                 <div class="strip-grid">
-                    <div class="strip-item"><i class="fas fa-calendar-alt"></i><div><strong>Próxima cohorte</strong><span>JuLIO 2026 — Cupos limitados</span></div></div>
-                    <div class="strip-item"><i class="fas fa-certificate"></i><div><strong>Certificación</strong><span>Ingenieros Electronicos Certificados</span></div></div>
-                    <div class="strip-item"><i class="fas fa-child"></i><div><strong>Desde los 7 años</strong><span>Hasta los 15 años, todos bienvenidos</span></div></div>
-                    <div class="strip-item"><i class="fas fa-universal-access"></i><div><strong>100% Accesible</strong><span>Instalaciones y cursos adaptados</span></div></div>
+                    <div class="strip-item">
+                        <div class="strip-icon"><i class="fas fa-calendar-check"></i></div>
+                        <div><strong>Julio 2026</strong><span>Próxima cohorte — ¡Cupos limitados!</span></div>
+                    </div>
+                    <div class="strip-item">
+                        <div class="strip-icon"><i class="fas fa-certificate"></i></div>
+                        <div><strong>Certificación</strong><span>Ingenieros Electrónicos Certificados</span></div>
+                    </div>
+                    <div class="strip-item">
+                        <div class="strip-icon"><i class="fas fa-child"></i></div>
+                        <div><strong>Desde los 7 años</strong><span>Hasta los 15 años, ¡todos bienvenidos!</span></div>
+                    </div>
+                    <div class="strip-item">
+                        <div class="strip-icon"><i class="fas fa-universal-access"></i></div>
+                        <div><strong>100% Accesible</strong><span>Instalaciones y cursos adaptados</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARA NIÑOS Y PADRES -->
+        <section class="doble-publico">
+            <div class="container">
+                <div class="section-header" style="margin-bottom:2.5rem">
+                    <div class="section-label">¿Por qué RobotiX?</div>
+                    <h2 class="section-heading">Algo especial para <span class="tg">cada uno</span></h2>
+                </div>
+                <div class="dp-grid">
+                    <div class="dp-card dp-ninos">
+                        <div class="dp-emoji">🤖</div>
+                        <h3>¡Para los <span>chicos!</span></h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Construyes robots de verdad</li>
+                            <li><i class="fas fa-check-circle"></i> Programas con Arduino y Scratch</li>
+                            <li><i class="fas fa-check-circle"></i> Imprimes tus propios diseños 3D</li>
+                            <li><i class="fas fa-check-circle"></i> Compites en torneos</li>
+                            <li><i class="fas fa-check-circle"></i> Haces amigos que aman la tech</li>
+                        </ul>
+                        <a href="#cursos" class="dp-btn">¡Quiero entrar! <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="dp-divider">
+                        <div class="dp-vs">+</div>
+                    </div>
+                    <div class="dp-card dp-padres">
+                        <div class="dp-emoji">👨‍👩‍👧</div>
+                        <h3>Para los <span>papás</span></h3>
+                        <ul>
+                            <li><i class="fas fa-shield-alt"></i> Ambiente seguro y supervisado</li>
+                            <li><i class="fas fa-brain"></i> Desarrolla pensamiento lógico</li>
+                            <li><i class="fas fa-graduation-cap"></i> Habilidades para el futuro laboral</li>
+                            <li><i class="fas fa-heart"></i> Inclusivo para todos los ritmos</li>
+                            <li><i class="fas fa-users"></i> Grupos pequeños, atención personalizada</li>
+                        </ul>
+                        <a href="#inscripcion" class="dp-btn dp-btn-padres">Inscribir a mi hijo <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -118,24 +202,52 @@
         <!-- NOSOTROS -->
         <section id="nosotros" class="nosotros">
             <div class="container">
+                <div class="section-header">
+                    <div class="section-label">¿Quiénes somos?</div>
+                    <h2 class="section-heading">Robótica Maker <span class="tg">e Inclusiva</span></h2>
+                    <p class="section-sub">La primera academia de robótica educativa del sur colombiano</p>
+                </div>
                 <div class="nosotros-grid">
                     <div class="nosotros-text">
-                        <div class="section-label">¿Quiénes somos?</div>
-                        <h2 class="section-heading">Robótica Maker<br><span class="tg">e Inclusiva</span></h2>
-                        <p class="nd">RobotiX Lab nació en Neiva con una misión clara: democratizar el acceso a la tecnología y formar a la próxima generación de creadores, innovadores y solucionadores de problemas.</p></p>
+                        <p class="nd">RobotiX Lab nació en Neiva con una misión clara: <strong>democratizar el acceso a la tecnología</strong> y formar a la próxima generación de creadores, innovadores y solucionadores de problemas.</p>
                         <p class="nd">Somos la primera academia de robótica educativa en el sur colombiano con un enfoque integral <strong>STEAM</strong> y metodología <strong>Maker</strong>, donde los estudiantes desarrollan pensamiento lógico, creatividad e innovación construyendo tecnología real — no memorizándola.</p>
                         <div class="valores">
-                            <div class="valor"><div class="vi"><i class="fas fa-tools"></i></div><div><strong>Aprender haciendo</strong><span>Proyectos reales desde el primer día</span></div></div>
-                            <div class="valor"><div class="vi"><i class="fas fa-heart"></i></div><div><strong>Sin barreras</strong><span>Adaptamos el curso a ti, no al revés</span></div></div>
-                            <div class="valor"><div class="vi"><i class="fas fa-users"></i></div><div><strong>Comunidad viva</strong><span>Eventos, retos y torneos locales</span></div></div>
+                            <div class="valor">
+                                <div class="vi"><i class="fas fa-tools"></i></div>
+                                <div><strong>Aprender haciendo</strong><span>Proyectos reales desde el primer día</span></div>
+                            </div>
+                            <div class="valor">
+                                <div class="vi"><i class="fas fa-heart"></i></div>
+                                <div><strong>Sin barreras</strong><span>Adaptamos el curso a ti, no al revés</span></div>
+                            </div>
+                            <div class="valor">
+                                <div class="vi"><i class="fas fa-users"></i></div>
+                                <div><strong>Comunidad viva</strong><span>Eventos, retos y torneos locales</span></div>
+                            </div>
                         </div>
-                        <a href="#contacto" class="btn btn-primary" style="margin-top:2rem">Habla con nosotros</a>
+                        <a href="#contacto" class="btn btn-primary" style="margin-top:2rem"><i class="fas fa-comments"></i> Habla con nosotros</a>
                     </div>
                     <div class="fil-cards">
-                        <div class="fil-card"><div class="fc-icon"><i class="fas fa-microchip"></i></div><h3>Maker</h3><p>No enseñamos teoría aislada. Diseñamos, programamos y construimos sistemas tecnológicos reales aplicando electrónica, automatización y resolución de problemas del mundo real.</p></div>
-                        <div class="fil-card fc-accent"><div class="fc-icon"><i class="fas fa-wheelchair"></i></div><h3>Inclusiva</h3><p>Desarrollamos tecnología con propósito. Nuestros estudiantes crean soluciones accesibles y proyectos que mejoran la vida de las personas, aplicando diseño universal y pensamiento social.</p></div>
-                        <div class="fil-card"><div class="fc-icon"><i class="fas fa-brain"></i></div><h3>Neurodivergente</h3><p>Respetamos los diferentes estilos de aprendizaje y ritmos de cada estudiante, ofreciendo acompañamiento cercano y metodologías activas que potencian sus fortalezas cognitivas.</p></div>
-                        <div class="fil-card fc-accent"><div class="fc-icon"><i class="fas fa-lightbulb"></i></div><h3>Innovadora</h3><p>Programas actualizados con tecnologías reales usadas en la industria colombiana.</p></div>
+                        <div class="fil-card">
+                            <div class="fc-icon"><i class="fas fa-microchip"></i></div>
+                            <h3>Maker</h3>
+                            <p>No enseñamos teoría aislada. Diseñamos, programamos y construimos sistemas tecnológicos reales.</p>
+                        </div>
+                        <div class="fil-card fc-accent">
+                            <div class="fc-icon"><i class="fas fa-wheelchair"></i></div>
+                            <h3>Inclusiva</h3>
+                            <p>Desarrollamos tecnología con propósito. Nuestros estudiantes crean soluciones accesibles.</p>
+                        </div>
+                        <div class="fil-card">
+                            <div class="fc-icon"><i class="fas fa-brain"></i></div>
+                            <h3>Neurodivergente</h3>
+                            <p>Respetamos los diferentes estilos de aprendizaje y ritmos de cada estudiante.</p>
+                        </div>
+                        <div class="fil-card fc-accent">
+                            <div class="fc-icon"><i class="fas fa-lightbulb"></i></div>
+                            <h3>Innovadora</h3>
+                            <p>Programas actualizados con tecnologías reales usadas en la industria colombiana.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -147,103 +259,112 @@
                 <div class="section-header">
                     <div class="section-label">Programas académicos</div>
                     <h2 class="section-heading">Nuestros <span class="tg">Cursos</span></h2>
-                    <p class="section-sub">Desde los 7 años hasta los 15 años. Todos tienen un lugar en el Lab.</p>
+                    <p class="section-sub">Desde los 7 hasta los 15 años. ¡Todos tienen un lugar en el Lab!</p>
                 </div>
                 <div class="cursos-grid">
                     <div class="curso-card">
-                        <div class="ctag ctag-new">Nuevo</div>
-                        <div class="c-head"><div class="c-icon"><i class="fas fa-robot"></i></div><div class="c-meta"><span class="c-nivel">Nivel Explorer</span><span class="c-edad"><i class="fas fa-child"></i> 7 a 9 años</span></div></div>
-                        <h3>EXPLORER</h3>
-                        <p>Introducción a la robótica con kits adaptados, bloques de programación visual y proyectos creativos. Aprender jugando.</p>
-                        <ul class="c-features"><li><i class="fas fa-check-circle"></i> Kits físicos propios</li><li><i class="fas fa-check-circle"></i> Scratch & mBlock</li><li><i class="fas fa-check-circle"></i> Acompañamiento inclusivo</li></ul>
+                        <div class="curso-level-bar lb1"></div>
+                        <div class="ctag ctag-new">⭐ Nivel 1</div>
+                        <div class="c-age-badge">7 – 9 años</div>
+                        <div class="c-head">
+                            <div class="c-icon"><i class="fas fa-robot"></i></div>
+                            <div class="c-meta">
+                                <span class="c-nivel">EXPLORER</span>
+                                <span class="c-edad"><i class="fas fa-child"></i> Principiante</span>
+                            </div>
+                        </div>
+                        <h3>¡Empieza tu aventura!</h3>
+                        <p>Introducción a la robótica con kits adaptados, bloques de programación visual y proyectos creativos. <strong>Aprender jugando.</strong></p>
+                        <ul class="c-features">
+                            <li><i class="fas fa-check-circle"></i> Kits físicos propios</li>
+                            <li><i class="fas fa-check-circle"></i> Scratch & mBlock</li>
+                            <li><i class="fas fa-check-circle"></i> Acompañamiento inclusivo</li>
+                            <li><i class="fas fa-check-circle"></i> Proyectos para llevar a casa</li>
+                        </ul>
                         <a href="#contacto" class="btn-c">Ver programa <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="curso-card">
-                        <div class="c-head"><div class="c-icon"><i class="fas fa-microchip"></i></div><div class="c-meta"><span class="c-nivel">Nivel Builder</span><span class="c-edad"><i class="fas fa-user"></i> 10 a 12</span></div></div>
-                        <h3>BUILDER</h3>
-                        <p>Arduino, sensores, actuadores y diseño 3D. Crea tus propios proyectos tecnológicos desde cero y llévalos a la realidad.</p>
-                        <ul class="c-features"><li><i class="fas fa-check-circle"></i> Arduino & ESP32</li><li><i class="fas fa-check-circle"></i> Diseño e impresión 3D</li><li><i class="fas fa-check-circle"></i> Laboratorio Maker</li></ul>
+                        <div class="curso-level-bar lb2"></div>
+                        <div class="ctag ctag-new" style="background:linear-gradient(135deg,#FF7A18,#E65100)">🔧 Nivel 2</div>
+                        <div class="c-age-badge">10 – 12 años</div>
+                        <div class="c-head">
+                            <div class="c-icon"><i class="fas fa-microchip"></i></div>
+                            <div class="c-meta">
+                                <span class="c-nivel">BUILDER</span>
+                                <span class="c-edad"><i class="fas fa-user"></i> Intermedio</span>
+                            </div>
+                        </div>
+                        <h3>¡Construye y programa!</h3>
+                        <p>Arduino, sensores, actuadores y diseño 3D. <strong>Crea tus propios proyectos</strong> desde cero y llévalos a la realidad.</p>
+                        <ul class="c-features">
+                            <li><i class="fas fa-check-circle"></i> Arduino & ESP32</li>
+                            <li><i class="fas fa-check-circle"></i> Diseño e impresión 3D</li>
+                            <li><i class="fas fa-check-circle"></i> Laboratorio Maker completo</li>
+                            <li><i class="fas fa-check-circle"></i> Retos y competencias</li>
+                        </ul>
                         <a href="#contacto" class="btn-c">Ver programa <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="curso-card curso-dest">
-                        <div class="ctag ctag-inc"><i class="fas fa-heart"></i> INNOVATOR</div>
-                        <div class="c-head"><div class="c-icon"><i class="fas fa-hand-holding-heart"></i></div><div class="c-meta"><span class="c-nivel">Nivel INNOVATOR</span><span class="c-edad"><i class="fas fa-users"></i> 12 a 15</span></div></div>
-                        <h3>INNOVATOR</h3>
-                        <p>Diseñado con y para personas con diversidad funcional. Material adaptado, ritmos personalizados y equipo especializado.</p>
-                        <ul class="c-features"><li><i class="fas fa-check-circle"></i> Adaptación individual</li><li><i class="fas fa-check-circle"></i> Acompañamiento especializado</li><li><i class="fas fa-check-circle"></i> Material táctil y visual</li></ul>
-                        <a href="#contacto" class="btn-c-primary">Solicitar info <i class="fas fa-arrow-right"></i></a>
+                        <div class="curso-level-bar lb3"></div>
+                        <div class="ctag ctag-inc"><i class="fas fa-heart"></i> ¡Inclusivo!</div>
+                        <div class="c-age-badge c-age-dest">12 – 15 años</div>
+                        <div class="c-head">
+                            <div class="c-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                            <div class="c-meta">
+                                <span class="c-nivel">INNOVATOR</span>
+                                <span class="c-edad"><i class="fas fa-users"></i> Avanzado</span>
+                            </div>
+                        </div>
+                        <h3>¡Sé el cambio!</h3>
+                        <p>Diseñado con y para personas con diversidad funcional. <strong>Material adaptado, ritmos personalizados</strong> y equipo especializado.</p>
+                        <ul class="c-features">
+                            <li><i class="fas fa-check-circle"></i> Adaptación individual completa</li>
+                            <li><i class="fas fa-check-circle"></i> Acompañamiento especializado</li>
+                            <li><i class="fas fa-check-circle"></i> Material táctil y visual</li>
+                            <li><i class="fas fa-check-circle"></i> Proyectos de impacto social</li>
+                        </ul>
+                        <a href="#contacto" class="btn-c-primary">¡Solicitar info! <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="cursos-cta-wrap">
-                    <p>¿No sabes cuál curso es para ti?</p>
-                    <a href="#contacto" class="btn btn-outline">Asesórate gratis <i class="fas fa-comments"></i></a>
+                    <p>¿No sabes cuál curso es ideal para tu hijo/a?</p>
+                    <a href="#contacto" class="btn btn-outline"><i class="fas fa-comments"></i> ¡Asesórate gratis!</a>
                 </div>
             </div>
         </section>
 
-<!-- IMPACTO SOCIAL -->
-<section id="impacto" class="inclusion">
-    <div class="inc-bg"></div>
-    <div class="container">
-        <div class="inclusion-layout">
-            <div class="inclusion-text">
-                <div class="section-label light">Impacto real</div>
-                <h2 class="section-heading light">Robótica que<br><span class="tg">transforma realidades</span></h2>
-                <p class="inc-desc">
-                    En RobotiX Lab creemos que la tecnología no es un lujo, es una herramienta de cambio.
-                    Formamos niños y jóvenes para que desarrollen habilidades que les permitan competir
-                    en un mundo global, sin importar su contexto.
-                </p>
-                <blockquote class="inc-quote">
-                    "No enseñamos robots.<br>
-                    Creamos oportunidades."
-                </blockquote>
-                <a href="#contacto" class="btn btn-primary">Sé parte del cambio</a>
-            </div>
-            <div class="inc-cards">
-                <div class="inc-card">
-                    <div class="ic-icon"><i class="fas fa-lightbulb"></i></div>
-                    <h4>Acceso a tecnología</h4>
-                    <p>Acercamos herramientas de innovación a comunidades que antes no tenían acceso.</p>
-                </div>
-                <div class="inc-card">
-                    <div class="ic-icon"><i class="fas fa-rocket"></i></div>
-                    <h4>Habilidades del futuro</h4>
-                    <p>Programación, pensamiento crítico y resolución de problemas reales.</p>
-                </div>
-                <div class="inc-card">
-                    <div class="ic-icon"><i class="fas fa-globe"></i></div>
-                    <h4>Visión global</h4>
-                    <p>Preparamos estudiantes para competir en escenarios internacionales.</p>
-                </div>
-                <div class="inc-card">
-                    <div class="ic-icon"><i class="fas fa-users"></i></div>
-                    <h4>Impacto comunitario</h4>
-                    <p>Proyectos que solucionan problemas reales dentro de su entorno.</p>
-                </div>
-                <div class="inc-card">
-                    <div class="ic-icon"><i class="fas fa-handshake"></i></div>
-                    <h4>Alianzas estratégicas</h4>
-                    <p>Trabajamos con instituciones para expandir el acceso a educación STEAM.</p>
-                </div>
-                <div class="inc-card">
-                    <div class="ic-icon"><i class="fas fa-chart-line"></i></div>
-                    <h4>Movilidad social</h4>
-                    <p>Formamos talento con oportunidades reales de crecimiento académico y profesional.</p>
+        <!-- IMPACTO SOCIAL -->
+        <section id="impacto-social" class="inclusion">
+            <div class="inc-bg"></div>
+            <div class="container">
+                <div class="inclusion-layout">
+                    <div class="inclusion-text">
+                        <div class="section-label light">Impacto real</div>
+                        <h2 class="section-heading light">Robótica que<br><span class="tg">transforma realidades</span></h2>
+                        <p class="inc-desc">En RobotiX Lab creemos que la tecnología no es un lujo, es una herramienta de cambio. Formamos niños y jóvenes para que desarrollen habilidades que les permitan competir en un mundo global, sin importar su contexto.</p>
+                        <blockquote class="inc-quote">"No enseñamos robots.<br>Creamos oportunidades."</blockquote>
+                        <a href="#contacto" class="btn btn-primary"><i class="fas fa-hand-holding-heart"></i> Sé parte del cambio</a>
+                    </div>
+                    <div class="inc-cards">
+                        <div class="inc-card"><div class="ic-icon"><i class="fas fa-lightbulb"></i></div><h4>Acceso a tecnología</h4><p>Acercamos herramientas de innovación a comunidades que antes no tenían acceso.</p></div>
+                        <div class="inc-card"><div class="ic-icon"><i class="fas fa-rocket"></i></div><h4>Habilidades del futuro</h4><p>Programación, pensamiento crítico y resolución de problemas reales.</p></div>
+                        <div class="inc-card"><div class="ic-icon"><i class="fas fa-globe"></i></div><h4>Visión global</h4><p>Preparamos estudiantes para competir en escenarios internacionales.</p></div>
+                        <div class="inc-card"><div class="ic-icon"><i class="fas fa-users"></i></div><h4>Impacto comunitario</h4><p>Proyectos que solucionan problemas reales dentro de su entorno.</p></div>
+                        <div class="inc-card"><div class="ic-icon"><i class="fas fa-handshake"></i></div><h4>Alianzas estratégicas</h4><p>Trabajamos con instituciones para expandir el acceso a educación STEAM.</p></div>
+                        <div class="inc-card"><div class="ic-icon"><i class="fas fa-chart-line"></i></div><h4>Movilidad social</h4><p>Formamos talento con oportunidades reales de crecimiento.</p></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-        <!-- IMPACTO -->
+        <!-- IMPACTO NÚMEROS -->
         <section class="impacto">
             <div class="container">
                 <div class="impacto-grid">
                     <div class="imp-item"><span class="imp-n" data-target="30">0</span><span class="imp-plus">+</span><p>Estudiantes formados</p></div>
                     <div class="imp-item"><span class="imp-n" data-target="3">0</span><p>Programas activos</p></div>
                     <div class="imp-item"><span class="imp-n" data-target="5">0</span><span class="imp-plus">+</span><p>Proyectos realizados</p></div>
-                    <div class="imp-item"><span class="imp-n" data-target="1">0</span><p>Años de experiencia</p></div>
+                    <div class="imp-item"><span class="imp-n" data-target="1">0</span><p>Año de experiencia</p></div>
                 </div>
             </div>
         </section>
@@ -257,61 +378,94 @@
                     <p class="section-sub">Momentos reales de aprendizaje, creación y comunidad.</p>
                 </div>
                 <div class="gal-grid">
-                    <div class="gal-item gi-tall"><div class="gi-overlay"><i class="fas fa-robot fa-3x"></i><span>Curso Maker</span></div></div>
-                    <div class="gal-item"><div class="gi-overlay"><i class="fas fa-child fa-2x"></i><span>Robótica Infantil</span></div></div>
-                    <div class="gal-item"><div class="gi-overlay"><i class="fas fa-wheelchair fa-2x"></i><span>Programa Inclusivo</span></div></div>
-                    <div class="gal-item gi-wide"><div class="gi-overlay"><i class="fas fa-industry fa-2x"></i><span>Robótica Industrial</span></div></div>
-                    <div class="gal-item"><div class="gi-overlay"><i class="fas fa-users fa-2x"></i><span>Comunidad Lab</span></div></div>
+                    <!--
+                        NOMBRES DE IMÁGENES PARA SUBIR:
+                        ┌─────────────────────────────────────────────────────┐
+                        │  foto-maker.jpg      → Taller / clase maker          │
+                        │  foto-ninos.jpg      → Niños trabajando con robots   │
+                        │  foto-inclusivo.jpg  → Programa inclusivo            │
+                        │  foto-arduino.jpg    → Proyectos con Arduino         │
+                        │  foto-comunidad.jpg  → Grupo de estudiantes          │
+                        └─────────────────────────────────────────────────────┘
+                        Todos deben ir en la misma carpeta que el index.html
+                    -->
+                    <div class="gal-item gi-tall" style="background-image:url('foto-maker.jpg')">
+                        <div class="gi-overlay"><i class="fas fa-robot fa-2x"></i><span>Taller Maker</span></div>
+                    </div>
+                    <div class="gal-item" style="background-image:url('foto-ninos.jpg')">
+                        <div class="gi-overlay"><i class="fas fa-child fa-2x"></i><span>Robótica Infantil</span></div>
+                    </div>
+                    <div class="gal-item" style="background-image:url('foto-inclusivo.jpg')">
+                        <div class="gi-overlay"><i class="fas fa-heart fa-2x"></i><span>Programa Inclusivo</span></div>
+                    </div>
+                    <div class="gal-item gi-wide" style="background-image:url('foto-arduino.jpg')">
+                        <div class="gi-overlay"><i class="fas fa-microchip fa-2x"></i><span>Proyectos Arduino</span></div>
+                    </div>
+                    <div class="gal-item" style="background-image:url('foto-comunidad.jpg')">
+                        <div class="gi-overlay"><i class="fas fa-users fa-2x"></i><span>Comunidad Lab</span></div>
+                    </div>
                 </div>
-                <p class="gal-note"href="#contacto">¡Ven a conocernos!</a></p>
+                <div class="gal-cta">
+                    <p class="gal-note">¡Síguenos para ver más! <a href="https://www.instagram.com/robotixlab?igsh=OXhiOXhsZ2VvcHpo&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></p>
+                    <a href="#inscripcion" class="btn btn-primary"><i class="fas fa-door-open"></i> ¡Ven a conocernos!</a>
+                </div>
             </div>
         </section>
 
 
-        <!-- CTA INSCRIPCIÓN -->
-        <section id="inscripcion" class="inscripcion">
-            <div class="ins-bg"></div>
-            <div class="container">
-                <div class="ins-layout">
-                    <div class="ins-text">
-                        <div class="section-label light">Únete ahora</div>
-                        <h2>¿Listo para construir<br>tu <span class="tg">Futuro tecnológico?</span></h2>
-                        <p>Cupos limitados para la cohorte de Julio 2026. Reserva tu lugar hoy.</p>
-                        <div class="ins-contact-alt">
-                            <a href="https://wa.me/573001234567" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp</a>
-                            <a href="tel:+573001234567" class="btn-tel"><i class="fas fa-phone"></i> +57 319 433 7572
-                        </div>
-                    </div>
-                    <div class="ins-form-wrap">
-                        <form class="ins-form" id="insForm">
-                            <h3>Solicitar información</h3>
-                            <div class="form-group">
-                                <label>Nombre completo</label>
-                                <input type="text" placeholder="Ej: Juan Pérez" required>
-                            </div>
-                            <div class="form-group">
-                                <label>WhatsApp / Teléfono</label>
-                                <input type="tel" placeholder="+57 300 000 0000">
-                            </div>
-                            <div class="form-group">
-                                <label>Programa de interés</label>
-                                <select required>
-                                    <option value="" disabled selected>Selecciona un programa</option>
-                                    <option>EXPLORER (7-9 años)</option>
-                                    <option>BUILDER (10-12)</option>
-                                    <option>INNOVATOR(13-15)</option>
-                                    <option>No sé, quiero asesoría gratuita</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-full">
-                                <i class="fas fa-paper-plane"></i> Enviar solicitud
-                            </button>
-                        </form>
-                    </div>
+        <!-- INSCRIPCIÓN -->
+<section id="inscripcion" class="inscripcion">
+    <div class="ins-bg"></div>
+    <div class="container">
+        <div class="ins-layout">
+            <div class="ins-text">
+                <div class="section-label light">¡Cupos limitados!</div>
+                <h2>¿Listo para que tu hijo<br>construya el <span class="tg">futuro?</span></h2>
+                <p>Cohorte Julio 2026. <strong>¡Solo quedan pocos cupos!</strong> Reserva el lugar de tu hijo hoy y comienza la aventura.</p>
+                <div class="ins-trust">
+                    <div class="trust-item"><i class="fas fa-shield-alt"></i><span>Ambiente seguro</span></div>
+                    <div class="trust-item"><i class="fas fa-users"></i><span>Grupos pequeños</span></div>
+                    <div class="trust-item"><i class="fas fa-heart"></i><span>100% inclusivo</span></div>
+                </div>
+                <div class="ins-contact-alt">
+                    <a href="https://wa.me/573171765919" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="tel:+573171765919" class="btn-tel"><i class="fas fa-phone"></i> +57 317 176 5919</a>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="ins-form-wrap">
+                <form class="ins-form" id="insForm" method="POST">
+                    <h3><i class="fas fa-paper-plane"></i> Solicitar información</h3>
+                    <div class="form-group">
+                        <label>Nombre completo *</label>
+                        <input type="text" name="nombre" placeholder="Ej: Juan Pérez" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Correo electrónico *</label>
+                        <input type="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>WhatsApp / Teléfono</label>
+                        <input type="tel" name="telefono" placeholder="+57 300 000 0000">
+                    </div>
+                    <div class="form-group">
+                        <label>Programa de interés *</label>
+                        <select name="programa" required>
+                            <option value="" disabled selected>Selecciona un programa</option>
+                            <option value="EXPLORER (7-9 años)">EXPLORER (7-9 años)</option>
+                            <option value="BUILDER (10-12 años)">BUILDER (10-12 años)</option>
+                            <option value="INNOVATOR (13-15 años)">INNOVATOR (13-15 años)</option>
+                            <option value="Asesoría gratuita">No sé, quiero asesoría gratuita</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Enviar solicitud
+                    </button>
+                    <p class="form-note"><i class="fas fa-lock"></i> Tu información es privada. Te contactamos en menos de 24h.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- FOOTER -->
     <footer id="contacto" class="footer">
@@ -326,26 +480,36 @@
                     </div>
                     <div class="fc">
                         <h4>Programas</h4>
-                        <ul><li><a href="#cursos"><i class="fas fa-angle-right"></i> EXPLORER</a></li><li><a href="#cursos"><i class="fas fa-angle-right"></i> BUILDER</a></li><li><a href="#cursos"><i class="fas fa-angle-right"></i>INNOVATOR</a></li><li><a href="#cursos">
+                        <ul>
+                            <li><a href="#cursos"><i class="fas fa-angle-right"></i> 🌟 EXPLORER</a></li>
+                            <li><a href="#cursos"><i class="fas fa-angle-right"></i> 🔧 BUILDER</a></li>
+                            <li><a href="#cursos"><i class="fas fa-angle-right"></i> ❤️ INNOVATOR</a></li>
+                            <li><a href="#inscripcion"><i class="fas fa-angle-right"></i> Inscripciones</a></li>
+                        </ul>
                     </div>
                     <div class="fc">
                         <h4>Información</h4>
-                        <ul><li><a href="#nosotros"><i class="fas fa-angle-right"></i> Quiénes somos</a></li><li><a href="#inclusion"><i class="fas fa-angle-right"></i> Inclusión</a></li><li><a href="#galeria"><i class="fas fa-angle-right"></i> Galería</a></li><li><a href="#inscripcion"><i class="fas fa-angle-right"></i> Inscripciones</a></li></ul>
+                        <ul>
+                            <li><a href="#nosotros"><i class="fas fa-angle-right"></i> Quiénes somos</a></li>
+                            <li><a href="#impacto-social"><i class="fas fa-angle-right"></i> Inclusión</a></li>
+                            <li><a href="#galeria"><i class="fas fa-angle-right"></i> Galería</a></li>
+                            <li><a href="#inscripcion"><i class="fas fa-angle-right"></i> Inscripciones</a></li>
+                        </ul>
                     </div>
                     <div class="fc fc-contact">
                         <h4>Contacto</h4>
                         <ul class="f-contact-list">
-                            <li><i class="fas fa-phone"></i> +57 319 433 7572</li>
-                            <li><i class="fab fa-whatsapp"></i> +57 318 519 1757</li>
-                            <li><i class="fas fa-envelope"></i> ROBOTIXLAB@GMAIL.COM</li>
+                            <li><i class="fas fa-phone"></i> +57 317 176 5919</li>
+                            <li><i class="fab fa-whatsapp"></i> +57 317 176 5919</li>
+                            <li><i class="fas fa-envelope"></i> robotixlab@gmail.com</li>
                             <li><i class="fas fa-map-marker-alt"></i> Neiva, Huila — Colombia</li>
                             <li><i class="fas fa-clock"></i> Sab: 8 am – 12 pm</li>
                         </ul>
                         <div class="f-social">
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/robotixlab?igsh=OXhiOXhsZ2VvcHpo&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.tiktok.com/@robotix.lab?_r=1&_t=ZS-94xlkhEfLYv" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
                             <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
@@ -361,10 +525,16 @@
         </div>
     </footer>
 
-    <button class="back-top" id="backTop" aria-label="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/573171765919" class="wa-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-pulse"></span>
+    </a>
+
+    <button class="back-top" id="backTop" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
